@@ -56,6 +56,7 @@ cron.schedule("0 5 1 * *", function () {
 });
 
 cron.schedule("0 5 28 * *", function() {
+    
     var tanggal = new Date();
     tanggal.setDate(tanggal.getDate() - 1);
     var kemarin = moment(tanggal, "DD MM YYYY, hh:mm:ss");
